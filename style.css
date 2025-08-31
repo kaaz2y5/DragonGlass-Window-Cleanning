@@ -1,0 +1,156 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f1f9ff;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo img {
+  height: 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+}
+
+/* Dropdown */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.submenu li a {
+  font-weight: normal;
+  padding: 10px 15px;
+}
+
+.submenu li a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Call Now button */
+.call-now {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.call-now:hover {
+  background-color: #1e7e34;
+}
+
+/* Hero */
+.hero {
+  background: url('fjbk.png') center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 30px 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cta-btn {
+  background: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  background: #1e7e34;
+}
+
+/* Quote Form */
+.quote-form {
+  background: white;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.quote-form input,
+.quote-form textarea,
+.quote-form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+}
+
+.quote-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.quote-form button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 20px;
+}
